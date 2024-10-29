@@ -1,0 +1,36 @@
+// file: variables.ts
+
+const age: number = 25;
+let name: string = "Alice";
+
+console.log(`Initial age: ${age}`); // 這行可以正常執行
+console.log(`Initial name: ${name}`); // 這行可以正常執行
+
+// 嘗試更改 const 和 let
+// age = 30; // 這行會報錯，因為 age 是 const
+name = "Bob"; // 這行可以正常執行
+console.log(`Updated name: ${name}`);
+
+// file: controlFlow.ts
+
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(`${i} 是偶數`);
+  } else {
+    console.log(`${i} 是奇數`);
+  }
+}
+
+
+// file: multiplicationTable.ts
+
+function printMultiplicationTable(): void {
+  for (let i = 1; i <= 9; i++) {
+    for (let j = 1; j <= 9; j++) {
+      console.log(`${i} x ${j} = ${i * j}`);
+    }
+  }
+}
+
+// 呼叫函數來列印九九乘法表
+printMultiplicationTable();
